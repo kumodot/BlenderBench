@@ -18,6 +18,16 @@ A helper tool for preparing Blender scenes for 3D printing.
 It sets the scene scale to millimeters, adjusts viewport grid to 1cm, adds a “safe build plate” visualization, corner labels, and includes a quick STL export cycling function.
 <img width="1553" height="859" alt="image" src="https://github.com/user-attachments/assets/f29ee773-fc69-44da-9b1c-410090221ca4" />
 
+  >>> The Export button will export the selected object as an STL file using the following naming sequence:
+- 3dpart_bld_01.stl
+- 3dpart_bld_02.stl
+- 3dpart_bld_03.stl
+      The files are saved in the root of your D:\ drive.
+
+If you want to change the naming pattern or the save location, you can modify the Python code manually before installing the Blender Add-on.
+
+The files will always overwrite themselves following this cycle. So, after exporting 3dpart_bld_03.stl, the next export will return to 3dpart_bld_01.stl, and so on. These are intended as temporary files, so if you wish to keep them, simply move or rename them after export.
+
 ### [MS_ColorAid](./MS_ColorAid)
 <img width="892" height="753" alt="image" src="https://github.com/user-attachments/assets/92dc0021-b575-48fb-9d2f-9ec62c2f7e50" />
 
